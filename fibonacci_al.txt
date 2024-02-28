@@ -1,0 +1,20 @@
+Algoritmo Serie_Fibonacci
+    Definir a, b, fn, n, i como Entero
+
+    Escribir "Ingrese el número de términos de la serie de Fibonacci que desea calcular: "
+    Leer n
+
+    a <- 0  // Primer término de la serie
+    b <- 1  // Segundo término de la serie
+
+    Escribir "Serie de Fibonacci hasta ", n, " términos:"
+
+    Para i <- 1 Hasta n Hacer
+        Escribir a
+        fn <- a + b  // Calcula el siguiente término de la serie
+        a <- b       // Actualiza el primer término con el segundo
+        b <- fn      // Actualiza el segundo término con el siguiente término calculado
+    Fin Para
+
+Fin Algoritmo
+
